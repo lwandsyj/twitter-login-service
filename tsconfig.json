@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    /* 打包typescript 输入js 文件夹*/
+    "outDir": "./dist",
+    /* 允许我们指定编译器将输出的目标 JavaScript 版本 */
+    "target": "es2016", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    /* 允许我们在编译后的 JavaScript 代码中使用模块管理器。CommonJS 受支持并且是 Node.js 中的标准 */
+    "module": "commonjs",
+    /*允许我们将 ES6 模块编译为 CommonJS 模块*/ /* Specify what module code is generated. */
+    "esModuleInterop": true, /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    // "preserveSymlinks": true,                         /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
+    // 设置为true 时，启用区分大小写的文件命名
+    "forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports. */
+    /* 启用严格类型检查选项的选项 */
+    "strict": true, /* Enable all strict type-checking options. */
+    /* Completeness */
+    //如果设置为true，则跳过默认库声明文件的类型检查          /* Skip type checking .d.ts files that are included with TypeScript. */
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}
